@@ -1,0 +1,15 @@
+<?php if(!empty($productAjax)): ?>
+ <div class="p-relative">
+ <div class="row row-20">
+ <?php $__currentLoopData = $productAjax; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $v): $loop = $this->incrementLoopIndices();  ?>
+ <div class="col-3">
+ <?php  $this->startComponent('component.itemProduct', ['product' => $v]); ?>
+ <?php echo $this->renderComponent(); ?>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ <?php echo $productAjax->appends(request()->query())->links('pagination.pagin-ajax'); ?>
+
+ </div>
+<?php endif; ?>

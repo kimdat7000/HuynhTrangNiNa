@@ -1,0 +1,253 @@
+<?php $_shouldextend[1]=1; ?>
+<?php $this->startSection('content'); ?>
+<div class="gioi_thieu">
+ <div class="wrap-content">
+ <div class="row align-items-center">
+ <div class="gioithieu_left col-6">
+ <div class="mota_gioithieu">
+ <div class="title_gioithieu">
+ <p>Welcome to</p>
+ <p class="tieude_phu">CÔNG TY TNHH SẢN XUẤT Ô DÙ</p>
+ <p class="tieude"><?php echo \htmlentities($gioithieu['namevi']??'', ENT_QUOTES, 'UTF-8', false); ?></p>
+ </div>
+ <div class="noidung_gioithieu">
+ <?php echo Func::decodeHtmlChars($gioithieu['descvi']); ?>
+
+ </div>
+ <a class="xemthem_gioithieu text-decoration-none" href="gioi-thieu" title="Xem thêm">Xem thêm</a>
+ </div>
+ </div>
+ <div class="gioithieu_right col-6">
+ <div class="hinh_gioithieu">
+ <div class="hinh_gioithieu_1 aspect-[502/557]">
+ <img class="w-100" onerror="this.src='thumbs/502x557x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('news', '502x557x1', $gioithieu->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($gioithieu['namevi']??'', ENT_QUOTES, 'UTF-8', false); ?>" title="<?php echo \htmlentities($gioithieu['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ </div>
+ <div class="hinh_gioithieu_2 aspect-[345/345]">
+ <img class="" onerror="this.src='thumbs/345x345x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('news', '345x345x1', $gioithieu->photo1, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($gioithieu['namevi']??'', ENT_QUOTES, 'UTF-8', false); ?>" title="<?php echo \htmlentities($gioithieu['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+</div>
+<?php if($listProductNB->isNotEmpty()): ?>
+<div class="wrap-content pt-4 pb-4 ">
+ <div class="title-main title-none">
+ <h2>Sản phẩm ô dù</h2>
+ </div>
+ <div class="list-hot">
+ <?php $__currentLoopData = $listProductNB; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $k => $v): $loop = $this->incrementLoopIndices();  ?>
+ <a class="<?php echo \htmlentities($k == 0 ? 'active' : ''??'', ENT_QUOTES, 'UTF-8', false); ?>" data-url="<?php echo \htmlentities(url('load-product-list-home')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ data-list="<?php echo \htmlentities($v->id??'', ENT_QUOTES, 'UTF-8', false); ?>"> <?php echo \htmlentities($v->namevi ?? ''??'', ENT_QUOTES, 'UTF-8', false); ?> </a>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ <div data-url="<?php echo \htmlentities(url('load-product-list-home')??'', ENT_QUOTES, 'UTF-8', false); ?>" class="paging-product-hot mb-2"></div>
+</div>
+<?php endif; ?>
+<div class="hinh_banner_qc">
+ <a class=" text-decoration-none scale-img hover-img" href="<?php echo \htmlentities($bannerQC['link']??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ title=" <?php echo \htmlentities($setting['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ <img class=" w-100" onerror="this.src='thumbs/1366x360x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('photo', '1366x360x1', $bannerQC->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($setting['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>" title="Banner quảng cáo">
+ </a>
+</div>
+<?php if($dichvu->isNotEmpty()): ?>
+<div class="dich_vu padding-top-bottom">
+ <div class="wrap-content">
+ <div class="title-main">
+ <h2>Dịch vụ chúng tôi</h2>
+ <p><?php echo \htmlentities($slogan['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?></p>
+ </div>
+ <div class="owl-page owl-carousel owl-theme" data-items="screen:0|items:3|margin:20" data-rewind="1"
+ data-autoplay="1" data-loop="0" data-lazyload="0" data-mousedrag="1" data-touchdrag="1"
+ data-smartspeed="500" data-autoplayspeed="3500" data-dots="0" data-nav="1"
+ data-navcontainer=".control-partner">
+ <?php $__currentLoopData = $dichvu; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $k => $v): $loop = $this->incrementLoopIndices();  ?>
+ <div class="items_dichvu" data-aos="zoom-in" data-aos-duration="1000">
+ <div class="box_dichvu">
+ <h3 class="name_dichvu ">
+ <a class=" text-decoration-none d-block text-split2"
+ href="<?php echo \htmlentities(url('slugweb', ['slug' => $v['slugvi']])??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ title=" <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>"> <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?></a>
+ </h3>
+ <div class="hinh_dichvu">
+ <a class=" text-decoration-none scale-img hover-img"
+ href="<?php echo \htmlentities(url('slugweb', ['slug' => $v['slugvi']])??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ title=" <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ <img class=" w-100" onerror="this.src='thumbs/365x265x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('news', '365x265x1', $v->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>" title="<?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ </a>
+ </div>
+ <div class="text_dichvu">
+ <p class="mb-0 mota_dichvu text-split4">
+ <?php echo \htmlentities($v['desc' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ </div>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ </div>
+</div>
+<?php endif; ?>
+<?php if($tieuchi->isNotEmpty()): ?>
+<div class="tieu_chi padding-top-bottom">
+ <div class="wrap-content">
+ <div class="title-main title-white">
+ <span>Vì sao chọn chúng tôi</span>
+ <p><?php echo \htmlentities($slogan['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?></p>
+ </div>
+ <div class="d-flex justify-content-between align-items-center">
+ <div class="tieuchi_left">
+ <?php if(!empty($tieuchi[0])): ?>
+ <div class="box_tieuchi">
+ <div class="text_tieuchi">
+ <p class="mb-0 name_tieuchi">
+ <?php echo \htmlentities($tieuchi[0]['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ <p class="mb-0 mota_tieuchi text-split3">
+ <?php echo \htmlentities($tieuchi[0]['desc' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ </div>
+ </div>
+ <?php endif; ?>
+ <?php if(!empty($tieuchi[1])): ?>
+ <div class="box_tieuchi">
+ <div class="text_tieuchi">
+ <p class="mb-0 name_tieuchi">
+ <?php echo \htmlentities($tieuchi[1]['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ <p class="mb-0 mota_tieuchi text-split3">
+ <?php echo \htmlentities($tieuchi[1]['desc' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ </div>
+ </div>
+ <?php endif; ?>
+ </div>
+ <div class="tieuchi_center aspect-[440/440]">
+ <img class=" w-100 " onerror="this.src='thumbs/440x440x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('photo', '440x440x1', $imgTC->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($setting['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>" title="Hình tiêu chí">
+ </div>
+ <div class="tieuchi_right">
+ <?php if(!empty($tieuchi[2])): ?>
+ <div class="box_tieuchi">
+ <div class="text_tieuchi">
+ <p class="mb-0 name_tieuchi">
+ <?php echo \htmlentities($tieuchi[2]['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ <p class="mb-0 mota_tieuchi text-split3">
+ <?php echo \htmlentities($tieuchi[2]['desc' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ </div>
+ </div>
+ <?php endif; ?>
+ <?php if(!empty($tieuchi[3])): ?>
+ <div class="box_tieuchi">
+ <div class="text_tieuchi">
+ <p class="mb-0 name_tieuchi">
+ <?php echo \htmlentities($tieuchi[3]['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ <p class="mb-0 mota_tieuchi text-split3">
+ <?php echo \htmlentities($tieuchi[3]['desc' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ </div>
+ </div>
+ <?php endif; ?>
+ </div>
+
+ </div>
+ </div>
+</div>
+<?php endif; ?>
+<?php if($tintuc->isNotEmpty()): ?>
+<div class="tin_tuc padding-top-bottom">
+ <div class="wrap-content">
+ <div class="title-main title-none">
+ <h2>Tin tức & sự kiện</h2>
+ <p><?php echo \htmlentities($slogan['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?></p>
+ </div>
+ <div class="owl-page owl-carousel owl-theme" data-items="screen:0|items:4|margin:20" data-rewind="1"
+ data-autoplay="1" data-loop="0" data-lazyload="0" data-mousedrag="1" data-touchdrag="1"
+ data-smartspeed="500" data-autoplayspeed="3500" data-dots="0" data-nav="1"
+ data-navcontainer=".control-partner">
+ <?php $__currentLoopData = $tintuc; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $k => $v): $loop = $this->incrementLoopIndices();  ?>
+ <div class="items_tintuc" data-aos="zoom-in" data-aos-duration="1000">
+ <div class="box_tintuc">
+ <div class="hinh_tintuc">
+ <a class=" text-decoration-none scale-img hover-img aspect-[285/270]"
+ href="<?php echo \htmlentities(url('slugweb', ['slug' => $v['slugvi']])??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ title=" <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ <img class=" w-100"
+ onerror="this.src='thumbs/285x270x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('news', '285x270x1', $v->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>" title="<?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ </a>
+ </div>
+ <div class="text_tintuc">
+ <h3 class="name_tintuc ">
+ <a class=" text-decoration-none d-block text-split2"
+ href="<?php echo \htmlentities(url('slugweb', ['slug' => $v['slugvi']])??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ title=" <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>"> <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?></a>
+ </h3>
+
+ <p class="mb-0 mota_tintuc text-split3">
+ <?php echo \htmlentities($v['desc' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </p>
+ </div>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ </div>
+</div>
+<?php endif; ?>
+<?php if($doitac->isNotEmpty()): ?>
+<div class="doi_tac padding-top-bottom">
+ <div class="wrap-content">
+ <div class="owl-page owl-carousel owl-theme" data-items="screen:0|items:6|margin:10" data-rewind="1"
+ data-autoplay="1" data-loop="0" data-lazyload="0" data-mousedrag="1" data-touchdrag="1"
+ data-smartspeed="500" data-autoplayspeed="3500" data-dots="0" data-nav="1"
+ data-navcontainer=".control-partner">
+ <?php $__currentLoopData = $doitac; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $k => $v): $loop = $this->incrementLoopIndices();  ?>
+ <div class="items_doitac" data-aos="zoom-in" data-aos-duration="1000">
+ <div class="box_doitac">
+ <div class="hinh_doitac">
+ <a class=" text-decoration-none scale-img hover-img aspect-[190/130]"
+ href="<?php echo \htmlentities(url('slugweb', ['slug' => $v['slugvi']])??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ title=" <?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ <img class=" w-100"
+ onerror="this.src='thumbs/190x130x1/assets/images/noimage.png';"
+ src="<?php echo \htmlentities(assets_photo('photo', '190x130x1', $v->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>" title="<?php echo \htmlentities($v['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ </a>
+ </div>
+ </div>
+ </div>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </div>
+ </div>
+</div>
+<?php endif; ?>
+<?php $this->stopSection(); ?>
+<?php if (isset($_shouldextend[1])) { echo $this->runChild('layout'); } ?>

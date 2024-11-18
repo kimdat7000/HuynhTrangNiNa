@@ -1,0 +1,62 @@
+<footer>
+ <div class="footer-article">
+ <div class="wrap-content flex flex-wrap items-start justify-between">
+ <div class="footer-news">
+ <a class="logo-footer d-inline-block" href="">
+ <img src="<?php echo \htmlentities(assets_photo('photo', '176x176x2', $logoPhotoFooter->photo, 'thumbs')??'', ENT_QUOTES, 'UTF-8', false); ?>"
+ alt="<?php echo \htmlentities($setting['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>">
+ </a>
+ <div class="info-footer"><?php echo Func::decodeHtmlChars($logoPhotoFooter['desc' . $lang] ?? ''); ?></div>
+ </div>
+ <div class="footer-news">
+ <p class="name-tt-footer">
+ Công ty tnhh sản xuất ô dù
+ </p>
+ <h2 class="name-footer">
+ <?php echo \htmlentities($footer['name' . $lang]??'', ENT_QUOTES, 'UTF-8', false); ?>
+
+ </h2>
+ <div class="info-footer"><?php echo Func::decodeHtmlChars($footer['content' . $lang] ?? ''); ?></div>
+ </div>
+ <div class="footer-news">
+ <h3 class="title-footer">Chính sách khách hàng</h3>
+ <?php if($chinhsach->isNotEmpty()): ?>
+ <ul class="footer-ul p-0 m-0 list-none">
+ <?php $__currentLoopData = $chinhsach; $this->addLoop($__currentLoopData);$this->getFirstLoop();
+ foreach($__currentLoopData as $v): $loop = $this->incrementLoopIndices();  ?>
+ <li class="last:mb-0">
+ <h4 class="mb-0">
+ <a class="d-block text-decoration-none "
+ href="<?php echo \htmlentities(url('slugweb', ['slug' => $v->slugvi])??'', ENT_QUOTES, 'UTF-8', false); ?>"><?php echo \htmlentities($v->namevi??'', ENT_QUOTES, 'UTF-8', false); ?></a>
+ </h4>
+ </li>
+ <?php endforeach; $this->popLoop(); $loop = $this->getFirstLoop(); ?>
+ </ul>
+ <?php endif; ?>
+ </div>
+ <div class="footer-news">
+ <h3 class="title-footer">Fanpage</h3>
+ <?php if(!Func::isGoogleSpeed()): ?>
+ <div class="d-fanpage">
+ <div class="content-fanpage">
+ <?php  $this->startComponent('component.fanpage', ['fanpage' => $optSetting['fanpage']]); ?>
+ <?php echo $this->renderComponent(); ?>
+ </div>
+ </div>
+ <?php endif; ?>
+ </div>
+ </div>
+ <div class="footer-powered">
+ <div class="wrap-content">
+ <p class="copyright mb-0">Copyright ©<span><?php echo \htmlentities($copyright['name' . $lang] ?? ''??'', ENT_QUOTES, 'UTF-8', false); ?></span>. Designed by <span>Nina.vn</span></p>
+ </div>
+ </div>
+ </div>
+
+ <?php if(!Func::isGoogleSpeed()): ?>
+ <div class="d-maps">
+ <?php echo Func::decodeHtmlChars($optSetting['coords_iframe'] ?? ''); ?>
+
+ </div>
+ <?php endif; ?>
+</footer>

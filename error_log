@@ -1,0 +1,124 @@
+[29-Oct-2024 14:48:37 Asia/Ho_Chi_minh] PHP Fatal error:  Source dropped support for PHP <8.2 and you are running 7.4.33, please upgrade PHP
+ in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1) : eval()'d code(1) : eval()'d code on line 15
+[29-Oct-2024 14:53:20 Asia/Ho_Chi_minh] PHP Fatal error:  Source dropped support for PHP <8.2 and you are running 7.4.33, please upgrade PHP
+ in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1) : eval()'d code(1) : eval()'d code on line 15
+[29-Oct-2024 07:54:58 UTC] PHP Warning:  require(/home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): Failed to open stream: No such file or directory in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php on line 41
+[29-Oct-2024 07:54:58 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php(45): {closure}('667aeda72477189...', '/home/dpf3oyrxq...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1) : eval()'d code(1) : eval()'d code(25): ComposerAutoloaderInit84d69aeae6a307ef68c66c78ef89b954::getLoader()
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1) : eval()'d code(1): eval()
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1): eval()
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(12): include_once('/home/dpf3oyrxq...')
+#5 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php on line 41
+[29-Oct-2024 07:55:01 UTC] PHP Warning:  require(/home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php): Failed to open stream: No such file or directory in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php on line 41
+[29-Oct-2024 07:55:01 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '/home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/../symfony/var-dumper/Resources/functions/dump.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php:41
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php(45): {closure}('667aeda72477189...', '/home/dpf3oyrxq...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1) : eval()'d code(1) : eval()'d code(25): ComposerAutoloaderInit84d69aeae6a307ef68c66c78ef89b954::getLoader()
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1) : eval()'d code(1): eval()
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/autoload.php(1): eval()
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(12): include_once('/home/dpf3oyrxq...')
+#5 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/composer/autoload_real.php on line 41
+[29-Oct-2024 07:58:09 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:58:41 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:58:42 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:58:43 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:58:52 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:58:53 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:58:53 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:59:21 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:59:27 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
+[29-Oct-2024 07:59:44 UTC] PHP Fatal error:  Uncaught InvalidArgumentException: Expected either an instance of Dotenv\Repository\Adapter\WriterInterface or a class-string implementing Dotenv\Repository\Adapter\AdapterInterface in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php:211
+Stack trace:
+#0 /home/dpf3oyrxq7m5/xuongsxodu.com/src/Core/App.php(1) : eval()'d code(1) : eval()'d code(37): Dotenv\Repository\RepositoryBuilder->addAdapter('Dotenv\\Reposito...')
+#1 /home/dpf3oyrxq7m5/xuongsxodu.com/bootstrap/app.php(13): NINA\Core\App->__construct(Object(NINA\Core\Container))
+#2 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(900): {closure}(Object(NINA\Core\Container), Array)
+#3 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#4 /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/illuminate/container/Container.php(723): Illuminate\Container\Container->resolve('NINA\\Core\\App', Array)
+#5 /home/dpf3oyrxq7m5/xuongsxodu.com/index.php(14): Illuminate\Container\Container->make('NINA\\Core\\App')
+#6 {main}
+  thrown in /home/dpf3oyrxq7m5/xuongsxodu.com/vendor/vlucas/phpdotenv/src/Repository/RepositoryBuilder.php on line 211
